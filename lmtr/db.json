@@ -1,44 +1,35 @@
 {
   "products": [
     {
-      "id": 1,
-      "name": "Samsung Galaxy S22",
-      "price": 799.99,
-      "image": "https://images.samsung.com/is/image/samsung/p6pim/levant/sm-s901ezgdmea/gallery/levant-galaxy-s22-s901-sm-s901ezgdmea-530781853",
-      "category": "Electronics",
-      "description": "High-performance smartphone with a dynamic AMOLED display and triple-lens camera system."
+      "id": "1",
+      "name": "Laptop",
+      "price": 1200,
+      "category": "Gadgets",
+      "image": "https://i.pinimg.com/1200x/37/af/07/37af0765eeb3d0dde512ea8fd49807d1.jpg"
     },
     {
-      "id": 2,
-      "name": "Sony WH-1000XM5",
-      "price": 399.99,
-      "image": "https://m.media-amazon.com/images/I/61bKm+JvRIL._AC_SL1500_.jpg",
-      "category": "Electronics",
-      "description": "Industry-leading noise canceling over-ear headphones with premium sound and long battery life."
+      "0": {
+        "id": "2",
+        "name": "Microwave",
+        "price": "25000",
+        "category": "Kitchen appliances",
+        "image": "https://i.pinimg.com/736x/ed/c7/28/edc728e170ebcd5b0a5f75c7e478d0a6.jpg"
+      },
+      "id": "2178"
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "name": "Gadgets"
     },
     {
-      "id": 3,
-      "name": "Apple MacBook Air M2",
-      "price": 1199.00,
-      "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/macbook-air-m2-2022-gallery-1",
-      "category": "Electronics",
-      "description": "Lightweight laptop with Apple Silicon M2 chip, delivering powerful performance and all-day battery."
+      "id": "2",
+      "name": "Kitchen appliances"
     },
     {
-      "id": 4,
-      "name": "LG 55'' OLED TV",
-      "price": 1399.99,
-      "image": "https://www.lg.com/us/images/tvs/md07503914/gallery/desktop-01.jpg",
-      "category": "Electronics",
-      "description": "4K OLED smart TV with vivid color accuracy and Dolby Vision for immersive viewing."
-    },
-    {
-      "id": 5,
-      "name": "Canon EOS R50 Mirrorless Camera",
-      "price": 679.00,
-      "image": "https://m.media-amazon.com/images/I/61b-Kr0mCwL._AC_SL1500_.jpg",
-      "category": "Electronics",
-      "description": "Compact mirrorless camera with 24MP sensor, 4K video, and advanced autofocus for content creators."
+      "id": "3",
+      "name": "Office Electronics"
     }
   ]
 }
