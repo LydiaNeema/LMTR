@@ -1,44 +1,51 @@
 {
   "products": [
     {
-      "id": 1,
-      "name": "Samsung Galaxy S22",
-      "price": 799.99,
-      "image": "https://images.samsung.com/is/image/samsung/p6pim/levant/sm-s901ezgdmea/gallery/levant-galaxy-s22-s901-sm-s901ezgdmea-530781853",
-      "category": "Electronics",
-      "description": "High-performance smartphone with a dynamic AMOLED display and triple-lens camera system."
+      "id": "1",
+      "name": "Laptop",
+      "price": 1200,
+      "category": "Computers & Laptops",
+      "image": "https://i.pinimg.com/1200x/37/af/07/37af0765eeb3d0dde512ea8fd49807d1.jpg"
     },
     {
-      "id": 2,
-      "name": "Sony WH-1000XM5",
-      "price": 399.99,
-      "image": "https://m.media-amazon.com/images/I/61bKm+JvRIL._AC_SL1500_.jpg",
-      "category": "Electronics",
-      "description": "Industry-leading noise canceling over-ear headphones with premium sound and long battery life."
-    },
-    {
-      "id": 3,
-      "name": "Apple MacBook Air M2",
-      "price": 1199.00,
-      "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/macbook-air-m2-2022-gallery-1",
-      "category": "Electronics",
-      "description": "Lightweight laptop with Apple Silicon M2 chip, delivering powerful performance and all-day battery."
-    },
-    {
-      "id": 4,
-      "name": "LG 55'' OLED TV",
-      "price": 1399.99,
-      "image": "https://www.lg.com/us/images/tvs/md07503914/gallery/desktop-01.jpg",
-      "category": "Electronics",
-      "description": "4K OLED smart TV with vivid color accuracy and Dolby Vision for immersive viewing."
-    },
-    {
-      "id": 5,
-      "name": "Canon EOS R50 Mirrorless Camera",
-      "price": 679.00,
-      "image": "https://m.media-amazon.com/images/I/61b-Kr0mCwL._AC_SL1500_.jpg",
-      "category": "Electronics",
-      "description": "Compact mirrorless camera with 24MP sensor, 4K video, and advanced autofocus for content creators."
+      "id": "2",
+      "name": "microwave",
+      "price": "2500",
+      "category": "Kitchen & Home Appliances",
+      "image": "https://i.pinimg.com/736x/5f/3c/8b/5f3c8b5386ec702869d914cc1d4eb8c6.jpg"
+
+      },
+
+     
+
+     {
+      "id": "4",
+      "name": "Desktop",
+      "price": "18000",
+      "category": "Computers & Laptops",
+      "image" : "https://i.pinimg.com/736x/26/31/16/263116ff7f3d5af1e08a47f4a8231a73.jpg"
     }
+  ],
+  "categories": [
+    { "id": 1,
+     "name": "Mobile Phones & Accessories" 
+    },
+    { "id": 2,
+     "name": "Computers & Laptops"
+     },
+    { "id": 3,
+     "name": "TV & Home Entertainment"
+     },
+    { "id": 4,
+     "name": "Kitchen & Home Appliances" 
+    },
+    { "id": 5,
+     "name": "Audio & Music"
+     },
+    { "id": 6,
+     "name": "Smart Devices"
+     },
+    { "id": 7,
+     "name": "Personal Care Electronics" }
   ]
 }
