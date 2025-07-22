@@ -22,32 +22,25 @@
       "image": "https://i.pinimg.com/736x/26/31/16/263116ff7f3d5af1e08a47f4a8231a73.jpg"
     },
     {
-      "id": "d844",
-      "name": "washing ",
-      "price": 23990,
-      "image": "https://i.pinimg.com/1200x/c4/59/78/c45978d0ed5879dc947648c686f9ea57.jpg",
-      "category": "laundry"
-    },
-    {
       "id": "7176",
       "name": "Atomatic pool cover ",
       "price": 65000,
       "image": "https://i.pinimg.com/1200x/6f/a1/53/6fa153195a6d125060ba679b5986e6a3.jpg",
-      "category": "otdor apliances"
+      "category": "outdoor appliances"
     },
     {
       "id": "d0a6",
       "name": "Atomatic  colld plunge",
       "price": 70000,
       "image": "https://i.pinimg.com/1200x/8d/d3/e9/8dd3e9657ec010f68e0f0ba7c1dc0f69.jpg",
-      "category": "otdor apliances"
+      "category": "outdoor appliances"
     },
     {
       "id": "ba4e",
-      "name": "outdoorpool shower hub",
+      "name": "outdoor pool shower hub",
       "price": 40000,
       "image": "https://i.pinimg.com/736x/98/2a/40/982a40767c139f21953de1fef1d40515.jpg",
-      "category": "otdor apliances"
+      "category": "outdoor appliances"
     }
   ],
   "categories": [
