@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function CategoryFilter({ options, onSelect }) {
+ function CategoryFilter({ options, onSelect }) {
   return (
     <select
       onChange={e => onSelect(e.target.value)}
@@ -13,3 +13,5 @@ export default function CategoryFilter({ options, onSelect }) {
     </select>
   );
 }
+
+export default CategoryFilter

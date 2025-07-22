@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import CategoryFilter from '../components/CategoryFilter';
 import CategoryList from '../components/CategoryList';
 
-export default function CategoryPage() {
+function CategoryPage() {
   const [categories, setCategories] = useState([]);
   const [products, setProducts] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
@@ -80,3 +80,4 @@ export default function CategoryPage() {
     </div>
   );
 }
+export default CategoryPage

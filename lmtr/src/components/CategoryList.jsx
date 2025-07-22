@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function CategoryList({ items }) {
+ function CategoryList({ items }) {
   if (!items.length) return null;
   return (
     <div className="flex space-x-4 overflow-x-auto">
@@ -14,3 +14,4 @@ export default function CategoryList({ items }) {
     </div>
   );
 }
+export default CategoryList
