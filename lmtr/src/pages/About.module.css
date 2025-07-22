@@ -1,0 +1,73 @@
+.aboutSection {
+  background: linear-gradient(110deg, #566160 70%, #dde6f6 100%);
+  padding: 48px 0;
+  transition: background 0.5s;
+}
+
+.aboutContainer {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 24px;
+  animation: fadeIn 1.2s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(40px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+
+.heading {
+  color: #1ee0f6;
+  margin-bottom: 18px;
+  font-size: 2.6rem;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.paragraph {
+  color: #fffdfd;
+  font-size: 1.18rem;
+  margin-bottom: 22px;
+  text-align: center;
+}
+
+.aboutDetails {
+  display: flex;
+  gap: 44px;
+  flex-wrap: wrap;
+  margin: 36px 0;
+  justify-content: center;
+}
+
+.card {
+  flex: 1 1 320px;
+  background: #749da1;
+  padding: 22px;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(44, 62, 80, 0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 8px 28px rgba(44,62,80,0.12);
+}
+
+.cardTitle {
+  color: #caec0c;
+  margin-bottom: 10px;
+}
+
+.valueList {
+  padding-left: 22px;
+}
+
+.aboutContact {
+  margin-top: 24px;
+  text-align: center;
+  font-size: 1.06rem;
+}
+
+.contactTitle {
+  margin-bottom: 6px;
+  color: #e8ce08;
+}
