@@ -230,6 +230,13 @@
       "price": 56000,
       "image": "https://i.pinimg.com/1200x/be/11/4f/be114f8902be4bf6c35480278917fb2f.jpg",
       "category": "Outdoor Appliances"
+    },
+    {
+      "id": "e95e",
+      "name": "Iphone 13 ProMax",
+      "price": -400,
+      "image": "https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "category": "Tv & Home Entertainment"
     }
   ],
   "categories": [
