@@ -22,6 +22,27 @@
       "image": "https://i.pinimg.com/736x/26/31/16/263116ff7f3d5af1e08a47f4a8231a73.jpg"
     },
     {
+      "id": "7176",
+      "name": "Atomatic pool cover ",
+      "price": 65000,
+      "image": "https://i.pinimg.com/1200x/6f/a1/53/6fa153195a6d125060ba679b5986e6a3.jpg",
+      "category": "outdoor appliances"
+    },
+    {
+      "id": "d0a6",
+      "name": "Atomatic  colld plunge",
+      "price": 70000,
+      "image": "https://i.pinimg.com/1200x/8d/d3/e9/8dd3e9657ec010f68e0f0ba7c1dc0f69.jpg",
+      "category": "outdoor appliances"
+    },
+    {
+      "id": "ba4e",
+      "name": "outdoor pool shower hub",
+      "price": 40000,
+      "image": "https://i.pinimg.com/736x/98/2a/40/982a40767c139f21953de1fef1d40515.jpg",
+      "category": "outdoor appliances
+    },
+    {
       "id": "6ee4",
       "name": "Washing Machine",
       "price": 65000,
@@ -213,29 +234,30 @@
   ],
   "categories": [
     {
-      "id": "1",
+      "id": 1,
       "name": "Mobile Phones & Accessories"
     },
     {
-      "id": "2",
+      "id": 2,
       "name": "Computers & Laptops"
     },
     {
-      "id": "3",
+      "id": 3,
       "name": "TV & Home Entertainment"
     },
     {
-      "id": "4",
+      "id": 4,
       "name": "Kitchen & Home Appliances"
     },
     {
-      "id": "5",
+      "id": 5,
       "name": "Audio & Music"
     },
     {
-      "id": "6",
+      "id": 6,
       "name": "Smart Devices"
     },
+    
     {
       "id": "7",
       "name": "Personal Care Electronics"
