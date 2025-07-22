@@ -1,0 +1,51 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Laptop",
+      "price": 1200,
+      "category": "Computers & Laptops",
+      "image": "https://i.pinimg.com/1200x/37/af/07/37af0765eeb3d0dde512ea8fd49807d1.jpg"
+    },
+    {
+      "id": "2",
+      "name": "microwave",
+      "price": "2500",
+      "category": "Kitchen & Home Appliances",
+      "image": "https://i.pinimg.com/736x/5f/3c/8b/5f3c8b5386ec702869d914cc1d4eb8c6.jpg"
+
+      },
+
+     
+
+     {
+      "id": "4",
+      "name": "Desktop",
+      "price": "18000",
+      "category": "Computers & Laptops",
+      "image" : "https://i.pinimg.com/736x/26/31/16/263116ff7f3d5af1e08a47f4a8231a73.jpg"
+    }
+  ],
+  "categories": [
+    { "id": 1,
+     "name": "Mobile Phones & Accessories" 
+    },
+    { "id": 2,
+     "name": "Computers & Laptops"
+     },
+    { "id": 3,
+     "name": "TV & Home Entertainment"
+     },
+    { "id": 4,
+     "name": "Kitchen & Home Appliances" 
+    },
+    { "id": 5,
+     "name": "Audio & Music"
+     },
+    { "id": 6,
+     "name": "Smart Devices"
+     },
+    { "id": 7,
+     "name": "Personal Care Electronics" }
+  ]
+}
