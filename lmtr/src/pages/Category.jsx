@@ -11,8 +11,8 @@ function CategoryPage() {
 
   useEffect(() => {
     Promise.all([
-      fetch('http://localhost:3001/categories').then(res => res.json()),
-      fetch('http://localhost:3001/products').then(res => res.json()),
+      fetch('http://localhost:3000/categories').then(res => res.json()),
+      fetch('http://localhost:3000/products').then(res => res.json()),
     ])
       .then(([categoriesData, productsData]) => {
         setCategories(['All', ...categoriesData.map(c => c.name)]);
