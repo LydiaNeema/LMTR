@@ -20,11 +20,16 @@ function AddProductForm({ onAdd }) {
 
   function handleSubmit(e) {
     e.preventDefault();
+    if (formData.price < 0) {
+    alert("Price cannot be negative.");
+    return;
+    }
 
     const newProduct = {
       ...formData,
       price: parseFloat(formData.price),
     };
+   
 
     fetch(API_URL, {
       method: "POST",
@@ -59,6 +64,7 @@ function AddProductForm({ onAdd }) {
       <input
         type="number"
         name="price"
+        min="0"
         placeholder="Price"
         value={formData.price}
         onChange={handleChange}
