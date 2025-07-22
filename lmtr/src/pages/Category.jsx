@@ -1,33 +1,12 @@
-import { useState, useEffect } from "react";
 
- function CategoryForm({ selected, onSave, onCancel }) {
-  const [name, setName] = useState("");
+import CategoryList from "../components/CategoryList";
 
-  useEffect(() => {
-    setName(selected?.name || "");
-  }, [selected]);
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (!name.trim()) return alert("Category name is required");
-
-    onSave({ ...selected, name });
-    setName("");
-  };
-
+ function CategoriesPage() {
   return (
-    <form onSubmit={handleSubmit}>
-      <input
-        value={name}
-        onChange={(e) => setName(e.target.value)}
-        placeholder="Category name"
-      />
-      <button type="submit">{selected ? "Update" : "Add"}</button>
-      {selected && <button onClick={onCancel}>Cancel</button>}
-    </form>
+    <main>
+      <h1>Manage Categories</h1>
+      <CategoryList />
+    </main>
   );
 }
-
-export default  CategoryForm
-
-
+export default CategoriesPage
