@@ -16,16 +16,10 @@
 
       },
 
-       {
-      "id": "3",
-      "name": "Fridge",
-      "price": "50000",
-      "category": "Kitchen & Home Appliances",
-      "image" : "https://i.pinimg.com/736x/16/f0/a7/16f0a79bc24128dcdbc12136702f3f11.jpg"
-    },
+     
 
      {
-      "id": "3",
+      "id": "4",
       "name": "Desktop",
       "price": "18000",
       "category": "Computers & Laptops",
