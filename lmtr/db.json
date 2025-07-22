@@ -20,6 +20,195 @@
       "price": "18000",
       "category": "Computers & Laptops",
       "image": "https://i.pinimg.com/736x/26/31/16/263116ff7f3d5af1e08a47f4a8231a73.jpg"
+    },
+    {
+      "id": "6ee4",
+      "name": "Washing Machine",
+      "price": 65000,
+      "image": "https://plus.unsplash.com/premium_photo-1675937428916-535f85f41c61?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "category": "Kitchen & Home Appliances"
+    },
+    {
+      "id": "641a",
+      "name": "Desktop M series",
+      "price": 74000,
+      "image": "https://plus.unsplash.com/premium_photo-1732730224379-e41d784c717a?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "category": "Computers & Laptops"
+    },
+    {
+      "id": "36d2",
+      "name": "Flat Screen Tv",
+      "price": 57000,
+      "image": "https://plus.unsplash.com/premium_photo-1681236323432-3df82be0c1b0?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "category": "Tv & Home Entertainment"
+    },
+    {
+      "id": "1138",
+      "name": "Sound System",
+      "price": 80000,
+      "image": "https://images.unsplash.com/photo-1595432541891-a461100d3054?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "category": "Tv & Home Entertainment"
+    },
+    {
+      "id": "c08b",
+      "name": "Lavish Speakers",
+      "price": 45000,
+      "image": "https://i.pinimg.com/736x/a3/6c/a7/a36ca7c1a84fabdb4d83d4f09ad3950b.jpg",
+      "category": "Tv & Home Entertainment"
+    },
+    {
+      "id": "1f6a",
+      "name": "Retro Coolers",
+      "price": 15000,
+      "image": "https://media.istockphoto.com/id/172897004/photo/red-and-white-cooler-containing-ice-and-five-cans-of-soda.jpg?s=1024x1024&w=is&k=20&c=p7PuCtBqCTP2Jp3Lgvn2Vh7spfKNspzbdTW02hbNyPE=",
+      "category": "Kitchen & Home Appliances"
+    },
+    {
+      "id": "aa1f",
+      "name": "PS5",
+      "price": 68000,
+      "image": "https://images.unsplash.com/photo-1607853202273-797f1c22a38e?q=80&w=627&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "category": "Tv & Home Entertainment"
+    },
+    {
+      "id": "174c",
+      "name": "Smart Pool Table",
+      "price": 180000,
+      "image": "https://i.pinimg.com/736x/36/3f/d0/363fd0cc86e7a6de6fcd56e7fdbfab93.jpg",
+      "category": "Tv & Home Entertainment"
+    },
+    {
+      "id": "74bf",
+      "name": "Smart Fridge ",
+      "price": 3000000,
+      "image": "https://i.pinimg.com/736x/eb/6d/92/eb6d925b808933c7096f38151cba80a3.jpg",
+      "category": "Kitchen & Home Appliances"
+    },
+    {
+      "id": "cd98",
+      "name": "Gaming Desk",
+      "price": 3500000,
+      "image": "https://i.pinimg.com/1200x/14/a6/4a/14a64afc900ad452de8f6759bfc79e40.jpg",
+      "category": "Tv & Home Entertainment"
+    },
+    {
+      "id": "a952",
+      "name": "Smart Lighting System",
+      "price": 500000,
+      "image": "https://i.pinimg.com/736x/c3/98/29/c39829897d3832461466608240f39a5f.jpg",
+      "category": "Tv & Home Entertainment"
+    },
+    {
+      "id": "d3c7",
+      "name": "Vacuum Cleaner",
+      "price": 120000,
+      "image": "https://i.pinimg.com/736x/74/48/78/744878bd4431c97982c44b211335eebf.jpg",
+      "category": "Kitchen & Home Appliances"
+    },
+    {
+      "id": "4712",
+      "name": "Lavish Tv",
+      "price": 350000,
+      "image": "https://i.pinimg.com/736x/d9/57/d2/d957d25ac2318542b932b1cbb77e492d.jpg",
+      "category": "Tv & Home Entertainment"
+    },
+    {
+      "id": "ae10",
+      "name": "LM Gaming Laptop",
+      "price": 820000,
+      "image": "https://i.pinimg.com/736x/be/0a/17/be0a1726c32e960492370d8525b35987.jpg",
+      "category": "Computers & Laptops"
+    },
+    {
+      "id": "b6c6",
+      "name": "Hp Elite Book",
+      "price": 65000,
+      "image": "https://i.pinimg.com/736x/8e/3b/b2/8e3bb20fed486b2a08884a9efd424e38.jpg",
+      "category": "Computers & Laptops"
+    },
+    {
+      "id": "c5b8",
+      "name": "Mac Book PRO 2022",
+      "price": 157000,
+      "image": "https://i.pinimg.com/1200x/82/e2/bd/82e2bd6dca1e2dcc65fecaa3dbebed22.jpg",
+      "category": "Computers & Laptops"
+    },
+    {
+      "id": "ef17",
+      "name": "Apple Display Pro XDR",
+      "price": 200000,
+      "image": "https://i.pinimg.com/1200x/13/d7/7f/13d77fa38f444238c09decb31991d78b.jpg",
+      "category": "Computers & Laptops"
+    },
+    {
+      "id": "21ec",
+      "name": "Iphone 13 Pro Max",
+      "price": 130000,
+      "image": "https://i.pinimg.com/736x/d5/1b/0d/d51b0d8826063f245dc38e9ff6c5c263.jpg",
+      "category": "Mobile Phones & Accessories"
+    },
+    {
+      "id": "23f8",
+      "name": "Iphone 16 ProMax",
+      "price": 250000,
+      "image": "https://i.pinimg.com/736x/4c/b8/70/4cb870c3a746c9f45634d676d47c2254.jpg",
+      "category": "Mobile Phones & Accessories"
+    },
+    {
+      "id": "60db",
+      "name": "Apple Watch Series 9",
+      "price": 120000,
+      "image": "https://i.pinimg.com/1200x/37/a8/ae/37a8ae2095512429d5d0ffa5d8675378.jpg",
+      "category": "Mobile Phones & Accessories"
+    },
+    {
+      "id": "abb0",
+      "name": "EQ Fast Charger",
+      "price": 4000,
+      "image": "https://i.pinimg.com/736x/89/b0/93/89b093ba10cc816ae722c08702acc67a.jpg",
+      "category": "Mobile Phones & Accessories"
+    },
+    {
+      "id": "71c2",
+      "name": "EQ Power Bank",
+      "price": 30000,
+      "image": "https://i.pinimg.com/736x/7f/db/d6/7fdbd6ae077019374dfb85ca0a8e6c06.jpg",
+      "category": "Mobile Phones & Accessories"
+    },
+    {
+      "id": "c91e",
+      "name": "Lonet Charging Pod",
+      "price": 37000,
+      "image": "https://i.pinimg.com/736x/c3/22/69/c3226980861a74d53e1e5844292295b0.jpg",
+      "category": "Mobile Phones & Accessories"
+    },
+    {
+      "id": "76cf",
+      "name": "Zada Microphone ",
+      "price": 25000,
+      "image": "https://i.pinimg.com/736x/62/30/59/62305907f66c8b12a7c3ac310a27d1a5.jpg",
+      "category": "Audio & Music"
+    },
+    {
+      "id": "7c72",
+      "name": "Fista Recording  Microphone",
+      "price": 36000,
+      "image": "https://i.pinimg.com/736x/cd/98/69/cd9869a4b4c52dcf79069f95b53d29d0.jpg",
+      "category": "Audio & Music"
+    },
+    {
+      "id": "7a00",
+      "name": "Canon 370",
+      "price": 74000,
+      "image": "https://i.pinimg.com/736x/72/97/2a/72972a3974cb795049a79c8e2c364f1f.jpg",
+      "category": "Audio & Music"
+    },
+    {
+      "id": "2ac5",
+      "name": "Solar Panel ",
+      "price": 56000,
+      "image": "https://i.pinimg.com/1200x/be/11/4f/be114f8902be4bf6c35480278917fb2f.jpg",
+      "category": "Outdoor Appliances"
     }
   ],
   "categories": [
