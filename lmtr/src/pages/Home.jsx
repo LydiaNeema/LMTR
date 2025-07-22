@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from "react";
 import ProductCard from "../components/ProductCard";
 import AddProductForm from "../components/AddProductForm";
@@ -9,8 +8,9 @@ function Home() {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [editingProductId, setEditingProductId] = useState(null);
+  const [searchTerm, setSearchTerm] = useState("");
 
-  // Fetch products on mount
+  // Fetch products
   useEffect(() => {
     fetch(API_URL)
       .then((res) => res.json())
@@ -24,7 +24,7 @@ function Home() {
       });
   }, []);
 
-  // Add product
+  // Add new product
   function handleAddProduct(newProduct) {
     setProducts((prev) => [...prev, newProduct]);
   }
@@ -59,16 +59,31 @@ function Home() {
       .catch((err) => console.error("Error updating product:", err));
   }
 
+  // Filter products by search term
+  const filteredProducts = products.filter((product) =>
+    product.name.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+
   if (loading) return <p>Loading...</p>;
 
   return (
     <div className="p-4 space-y-6">
       <h1 className="text-2xl font-bold">All Products</h1>
 
+      <div className="mb-4">
+        <input
+          type="text"
+          placeholder="Search by name..."
+          className="border px-3 py-2 w-full rounded"
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+        />
+      </div>
+
       <AddProductForm onAdd={handleAddProduct} />
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-        {products.map((product) => (
+        {filteredProducts.map((product) => (
           <ProductCard
             key={product.id}
             product={product}
@@ -85,5 +100,3 @@ function Home() {
 }
 
 export default Home;
- 
-
