@@ -9,7 +9,7 @@ import React from 'react';
           <img src={item.image} alt={item.name} className="w-full h-32 object-cover rounded" />
           <h2 className="mt-2 font-semibold">{item.name}</h2>
       <p className="text-gray-700">
-          {`ksh${new Intl.NumberFormat('en-KE').format(item.price)}`}
+          {`ksh ${new Intl.NumberFormat('en-KE').format(item.price)}`}
      </p>
         </div>
       ))}
