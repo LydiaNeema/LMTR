@@ -216,6 +216,13 @@
       "price": 2500,
       "image": "https://i.pinimg.com/736x/aa/41/24/aa4124e2130c58e1696d577e28c9d467.jpg",
       "category": "Smart devices"
+    },
+    {
+      "id": "8fe5",
+      "name": "Wireless Headphones",
+      "price": 5000,
+      "image": "https://i.pinimg.com/1200x/47/00/31/470031c7e7e779d11d6c1e44d237ea4e.jpg",
+      "category": "Smart devices"
     }
   ],
   "categories": [
