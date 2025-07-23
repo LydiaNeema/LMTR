@@ -29,13 +29,6 @@
       "category": "outdoor appliances"
     },
     {
-      "id": "d0a6",
-      "name": "Atomatic  colld plunge",
-      "price": 70000,
-      "image": "https://i.pinimg.com/1200x/8d/d3/e9/8dd3e9657ec010f68e0f0ba7c1dc0f69.jpg",
-      "category": "outdoor appliances"
-    },
-    {
       "id": "ba4e",
       "name": "outdoor pool shower hub",
       "price": 40000,
@@ -216,27 +209,6 @@
       "price": 36000,
       "image": "https://i.pinimg.com/736x/cd/98/69/cd9869a4b4c52dcf79069f95b53d29d0.jpg",
       "category": "Audio & Music"
-    },
-    {
-      "id": "7a00",
-      "name": "Canon 370",
-      "price": 74000,
-      "image": "https://i.pinimg.com/736x/72/97/2a/72972a3974cb795049a79c8e2c364f1f.jpg",
-      "category": "Audio & Music"
-    },
-    {
-      "id": "2ac5",
-      "name": "Solar Panel ",
-      "price": 56000,
-      "image": "https://i.pinimg.com/1200x/be/11/4f/be114f8902be4bf6c35480278917fb2f.jpg",
-      "category": "Outdoor Appliances"
-    },
-    {
-      "id": "e95e",
-      "name": "Iphone 13 ProMax",
-      "price": -400,
-      "image": "https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "category": "Tv & Home Entertainment"
     }
   ],
   "categories": [
@@ -264,7 +236,6 @@
       "id": 6,
       "name": "Smart Devices"
     },
-    
     {
       "id": "7",
       "name": "Personal Care Electronics"
