@@ -32,49 +32,78 @@ function EditForm({ product, setProducts }) {
       })
       .catch((err) => console.error("Update failed:", err));
   };
-  
+
   return (
     <>
       <button
-        onClick={() => setShowForm(!showForm)}
+        className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600"
+        onClick={() => setShowForm(true)}
       >
-        {showForm ? "Cancel" : "Edit"}
+        Edit
       </button>
-      {showForm && (
-        <form onSubmit={handleUpdate} >
-          <input
-            type="text"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-            placeholder="Name"
 
+      {showForm && (
+        <>
+          {/* Overlay */}
+          <div
+            className="fixed inset-0  bg-opacity-50 z-40" style={{ background: 'linear-gradient(110deg, #566160 70%, #dde6f6 100%)' }}
+            onClick={() => setShowForm(false)}
           />
-          <input
-            type="number"
-            name="price"
-            value={formData.price}
-            onChange={handleChange}
-            placeholder="Price"
-          />
-          <input
-            type="text"
-            name="category"
-            value={formData.category}
-            onChange={handleChange}
-            placeholder="Category"
-          />
-          <input
-            type="text"
-            name="image"
-            value={formData.image}
-            onChange={handleChange}
-            placeholder="Image URL"
-          />
-          <button type="submit" >
-            Save
-          </button>
-        </form>
+
+          {/* Modal */}
+          <div className="fixed z-50 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white p-6 rounded-xl shadow-xl w-[90%] max-w-md">
+            <h2 className="text-lg font-bold mb-4">Edit Product</h2>
+            <form onSubmit={handleUpdate} className="flex flex-col gap-3">
+              <input
+                type="text"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                placeholder="Name"
+                className="border p-2 rounded"
+              />
+              <input
+                type="number"
+                name="price"
+                value={formData.price}
+                onChange={handleChange}
+                placeholder="Price"
+                className="border p-2 rounded"
+              />
+              <input
+                type="text"
+                name="category"
+                value={formData.category}
+                onChange={handleChange}
+                placeholder="Category"
+                className="border p-2 rounded"
+              />
+              <input
+                type="text"
+                name="image"
+                value={formData.image}
+                onChange={handleChange}
+                placeholder="Image URL"
+                className="border p-2 rounded"
+              />
+              <div className="flex justify-end gap-2 mt-4">
+                <button
+                  type="button"
+                  onClick={() => setShowForm(false)}
+                  className="px-4 py-2 border rounded hover:bg-gray-200"
+                >
+                  Cancel
+                </button>
+                <button
+                  type="submit"
+                  className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600"
+                >
+                  Save
+                </button>
+              </div>
+            </form>
+          </div>
+        </>
       )}
     </>
   );

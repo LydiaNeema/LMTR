@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import ProductCard from "../components/ProductCard";
 import AddProductForm from "../components/AddProductForm";
+import ImageSlider from "../components/ImageSlider";
 
 const API_URL = "http://localhost:3000/products";
 
@@ -64,38 +65,55 @@ function Home() {
     product.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
-  if (loading) return <p>Loading...</p>;
+  if (loading)
+    return (
+      <div className="flex justify-center items-center h-40">
+        <p className="text-xl font-semibold text-gray-600 animate-pulse">
+          Loading products...
+        </p>
+      </div>
+    );
 
   return (
-    <div className="p-4 space-y-6">
-      <h1 className="text-2xl font-bold">All Products</h1>
+    <div className="p-6 space-y-8 max-w-6xl mx-auto">
+      <h1 className="text-3xl font-bold text-center text-gray-800">
+         All Products
+      </h1>
+       <ImageSlider/>
 
-      <div className="mb-4">
-        <input
-          type="text"
-          placeholder="Search by name..."
-          className="border px-3 py-2 w-full rounded"
-          value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
-        />
-      </div>
+ 
+  <div className="flex justify-center gap-6">
+    <input
+      type="text"
+      placeholder="Search by product name..."
+      className="border border-cyan-900 shadow-sm px-4 py-2 w-full max-w-md rounded-md focus:outline-none focus:ring-2 focus:ring-cyan-500"
+      value={searchTerm}
+      onChange={(e) => setSearchTerm(e.target.value)}
+    />
+     <AddProductForm onAdd={handleAddProduct}/>
+  </div>
 
-      <AddProductForm onAdd={handleAddProduct} />
+  {/* Add product form */}
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-        {filteredProducts.map((product) => (
-          <ProductCard
-            key={product.id}
-            product={product}
-            onDelete={handleDeleteProduct}
-            onUpdate={handleUpdateProduct}
-            editingProductId={editingProductId}
-            setEditingProductId={setEditingProductId}
-            setProducts={setProducts}
-          />
-        ))}
-      </div>
-    </div>
+   
+
+  
+
+  {/* Product Grid */}
+  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+    {filteredProducts.map((product) => (
+      <ProductCard
+        key={product.id}
+        product={product}
+        onDelete={handleDeleteProduct}
+        onUpdate={handleUpdateProduct}
+        editingProductId={editingProductId}
+        setEditingProductId={setEditingProductId}
+        setProducts={setProducts}
+      />
+    ))}
+  </div>
+</div>
   );
 }
 
