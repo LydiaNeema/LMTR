@@ -209,6 +209,13 @@
       "price": 36000,
       "image": "https://i.pinimg.com/736x/cd/98/69/cd9869a4b4c52dcf79069f95b53d29d0.jpg",
       "category": "Audio & Music"
+    },
+    {
+      "id": "bfe6",
+      "name": "Wireless Earbuds ",
+      "price": 2500,
+      "image": "https://i.pinimg.com/736x/aa/41/24/aa4124e2130c58e1696d577e28c9d467.jpg",
+      "category": "Smart devices"
     }
   ],
   "categories": [
@@ -234,7 +241,7 @@
     },
     {
       "id": 6,
-      "name": "Smart Devices"
+      "name": "Smart devices"
     },
     {
       "id": "7",
