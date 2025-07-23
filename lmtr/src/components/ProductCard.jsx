@@ -2,7 +2,7 @@ import React from "react";
 import EditForm from "./EditForm";
 import AddProductForm from "./AddProductForm";
 
-const API_URL = "http://localhost:3000/products";
+const API_URL = "https://shop-stack.onrender.com/products";
 
 function ProductCard({ product, setProducts, onDelete }) {
   const { id, name, price, image, category } = product;
