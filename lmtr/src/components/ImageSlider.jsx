@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 
 const images = [
-"/public/logo.jpg",
-  "/public/apple.jpg",
-  "/public/fridge.jpg",
-  "/public/tv.jpg",
-  "/public/phone car.jpg",
-  "/public/tv2.jpg",
+"/logo.jpg",
+  "/apple.jpg",
+  "/fridge.jpg",
+  "/tv.jpg",
+  "/phone car.jpg",
+  "/tv2.jpg",
 ];
 
 function ImageSlider() {
