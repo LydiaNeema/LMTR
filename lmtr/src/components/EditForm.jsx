@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const API_URL = "http://localhost:3000/products";
+const API_URL = "https://shop-stack.onrender.com/products";
 
 function EditForm({ product, setProducts }) {
   const [showForm, setShowForm] = useState(false);
@@ -44,13 +44,11 @@ function EditForm({ product, setProducts }) {
 
       {showForm && (
         <>
-          {/* Overlay */}
           <div
             className="fixed inset-0  bg-opacity-50 z-40" style={{ background: 'linear-gradient(110deg, #566160 70%, #dde6f6 100%)' }}
             onClick={() => setShowForm(false)}
           />
 
-          {/* Modal */}
           <div className="fixed z-50 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white p-6 rounded-xl shadow-xl w-[90%] max-w-md">
             <h2 className="text-lg font-bold mb-4">Edit Product</h2>
             <form onSubmit={handleUpdate} className="flex flex-col gap-3">
