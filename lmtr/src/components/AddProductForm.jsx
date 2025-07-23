@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const API_URL = "http://localhost:3000/products";
+const API_URL = "https://shop-stack.onrender.com/products";
 
 function AddProductForm({ onAdd }) {
   const [formData, setFormData] = useState({
@@ -58,7 +58,6 @@ fetch(API_URL, {
 
   return (
     <>
-      {/* New Product Button */}
       <button
         onClick={() => setShowModal(true)}
         className="bg-red-500 text-white px-6 py-3 rounded-xl relative font-semibold flex items-center gap-2 shadow-md hover:bg-red-600 transition"
@@ -68,19 +67,14 @@ fetch(API_URL, {
         <span className="absolute bottom-0 left-0 w-5 h-5 bg-white rounded-tr-[8px]"></span>
       </button>
 
-  {/* Modal */}
   {showModal && (
     <>
-      {/* Backdrop */}
       <div
         className="fixed inset-0  bg-opacity-40 backdrop-blur-sm z-40 transition-opacity duration-300" style={{ background: 'linear-gradient(110deg, #566160 70%, #dde6f6 100%)' }}
         onClick={handleCancel}
       ></div>
-
-      {/* Modal content */}
       <div className="fixed inset-0 z-50 flex items-center justify-center px-4">
         <div className="bg-white p-6 rounded-lg shadow-lg w-full max-w-md relative animate-fadeIn">
-          {/* Close icon */}
           <button
             onClick={handleCancel}
             className="absolute top-2 right-2 text-gray-500 hover:text-black text-xl font-bold"
@@ -129,8 +123,6 @@ fetch(API_URL, {
               className="w-full px-3 py-2 border rounded"
               required
             />
-
-            {/* Submit + Cancel Buttons */}
             <div className="flex justify-end gap-2 pt-2">
               <button
                 type="button"

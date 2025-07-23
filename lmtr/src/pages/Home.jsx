@@ -3,7 +3,7 @@ import ProductCard from "../components/ProductCard";
 import AddProductForm from "../components/AddProductForm";
 import ImageSlider from "../components/ImageSlider";
 
-const API_URL = "http://localhost:3000/products";
+const API_URL = "https://shop-stack.onrender.com/products";
 
 function Home() {
   const [products, setProducts] = useState([]);
@@ -11,7 +11,7 @@ function Home() {
   const [editingProductId, setEditingProductId] = useState(null);
   const [searchTerm, setSearchTerm] = useState("");
 
-  // Fetch products
+  
   useEffect(() => {
     fetch(API_URL)
       .then((res) => res.json())
@@ -25,12 +25,11 @@ function Home() {
       });
   }, []);
 
-  // Add new product
   function handleAddProduct(newProduct) {
     setProducts((prev) => [...prev, newProduct]);
   }
 
-  // Delete product
+
   function handleDeleteProduct(id) {
     fetch(`${API_URL}/${id}`, {
       method: "DELETE",
@@ -41,7 +40,7 @@ function Home() {
       .catch((err) => console.error("Error deleting product:", err));
   }
 
-  // Update product
+
   function handleUpdateProduct(updatedProduct) {
     fetch(`${API_URL}/${updatedProduct.id}`, {
       method: "PATCH",
@@ -60,7 +59,7 @@ function Home() {
       .catch((err) => console.error("Error updating product:", err));
   }
 
-  // Filter products by search term
+
   const filteredProducts = products.filter((product) =>
     product.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
@@ -92,14 +91,6 @@ function Home() {
     />
      <AddProductForm onAdd={handleAddProduct}/>
   </div>
-
-  {/* Add product form */}
-
-   
-
-  
-
-  {/* Product Grid */}
   <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
     {filteredProducts.map((product) => (
       <ProductCard
