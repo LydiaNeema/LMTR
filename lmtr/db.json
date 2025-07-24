@@ -26,14 +26,14 @@
       "name": "Atomatic pool cover ",
       "price": 65000,
       "image": "https://i.pinimg.com/1200x/6f/a1/53/6fa153195a6d125060ba679b5986e6a3.jpg",
-      "category": "outdoor appliances"
+      "category": "Outdoor Appliances"
     },
     {
       "id": "ba4e",
       "name": "outdoor pool shower hub",
       "price": 40000,
       "image": "https://i.pinimg.com/736x/98/2a/40/982a40767c139f21953de1fef1d40515.jpg",
-      "category": "outdoor appliances"
+      "category": "Outdoor Appliances"
     },
     {
       "id": "6ee4",
@@ -54,21 +54,21 @@
       "name": "Flat Screen Tv",
       "price": 57000,
       "image": "https://plus.unsplash.com/premium_photo-1681236323432-3df82be0c1b0?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "category": "Tv & Home Entertainment"
+      "category": "TV & Home Entertainment"
     },
     {
       "id": "1138",
       "name": "Sound System",
       "price": 80000,
       "image": "https://images.unsplash.com/photo-1595432541891-a461100d3054?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "category": "Tv & Home Entertainment"
+      "category": "TV & Home Entertainment"
     },
     {
       "id": "c08b",
       "name": "Lavish Speakers",
       "price": 45000,
       "image": "https://i.pinimg.com/736x/a3/6c/a7/a36ca7c1a84fabdb4d83d4f09ad3950b.jpg",
-      "category": "Tv & Home Entertainment"
+      "category": "TV & Home Entertainment"
     },
     {
       "id": "1f6a",
@@ -82,14 +82,14 @@
       "name": "PS5",
       "price": 68000,
       "image": "https://images.unsplash.com/photo-1607853202273-797f1c22a38e?q=80&w=627&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "category": "Tv & Home Entertainment"
+      "category": "TV & Home Entertainment"
     },
     {
       "id": "174c",
       "name": "Smart Pool Table",
       "price": 180000,
       "image": "https://i.pinimg.com/736x/36/3f/d0/363fd0cc86e7a6de6fcd56e7fdbfab93.jpg",
-      "category": "Tv & Home Entertainment"
+      "category": "TV & Home Entertainment"
     },
     {
       "id": "74bf",
@@ -103,14 +103,14 @@
       "name": "Gaming Desk",
       "price": 3500000,
       "image": "https://i.pinimg.com/1200x/14/a6/4a/14a64afc900ad452de8f6759bfc79e40.jpg",
-      "category": "Tv & Home Entertainment"
+      "category": "TV & Home Entertainment"
     },
     {
       "id": "a952",
       "name": "Smart Lighting System",
       "price": 500000,
       "image": "https://i.pinimg.com/736x/c3/98/29/c39829897d3832461466608240f39a5f.jpg",
-      "category": "Tv & Home Entertainment"
+      "category": "TV & Home Entertainment"
     },
     {
       "id": "d3c7",
@@ -124,7 +124,7 @@
       "name": "Lavish Tv",
       "price": 350000,
       "image": "https://i.pinimg.com/736x/d9/57/d2/d957d25ac2318542b932b1cbb77e492d.jpg",
-      "category": "Tv & Home Entertainment"
+      "category": "TV & Home Entertainment"
     },
     {
       "id": "ae10",
@@ -215,14 +215,14 @@
       "name": "Wireless Earbuds ",
       "price": 2500,
       "image": "https://i.pinimg.com/736x/aa/41/24/aa4124e2130c58e1696d577e28c9d467.jpg",
-      "category": "Smart devices"
+      "category": "Smart Devices"
     },
     {
       "id": "8fe5",
       "name": "Wireless Headphones",
       "price": 5000,
       "image": "https://i.pinimg.com/1200x/47/00/31/470031c7e7e779d11d6c1e44d237ea4e.jpg",
-      "category": "Smart devices"
+      "category": "Smart Devices"
     }
   ],
   "categories": [
@@ -236,7 +236,7 @@
     },
     {
       "id": 3,
-      "name": "Tv & Home Entertainment"
+      "name": "TV & Home Entertainment"
     },
     {
       "id": 4,
@@ -248,11 +248,15 @@
     },
     {
       "id": 6,
-      "name": "Smart devices"
+      "name": "Smart Devices"
     },
     {
       "id": "7",
       "name": "Personal Care Electronics"
+    },
+    {
+      "id": "8",
+      "name": "Outdoor Appliances"
     }
   ]
 }
