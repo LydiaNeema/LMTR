@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+// main function Contacts
 function Contacts() {
   const [formData, setFormData] = useState({
     name: "",
@@ -7,21 +7,21 @@ function Contacts() {
     subject: "",
     message: ""
   });
-
+//function to handle input change
   function handleChange(event) {
     const { name, value } = event.target;
     setFormData(prev => ({ ...prev, [name]: value }));
   }
-
+//function to handle submit form
   function handleSubmit(event) {
     event.preventDefault();
     const { name, email, message } = formData;
-
+//condition to check the input fields 
     if (!name.trim() || !email.trim() || !message.trim()) {
       alert("Name, Email, and Message fields are required.");
       return;
     }
-
+// condition to check email input
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email.trim())) {
       alert("Please enter a valid email address.");
