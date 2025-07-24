@@ -9,6 +9,9 @@ function CategoryPage() {
   const [filteredItems, setFilteredItems] = useState([]);
   const [error, setError] = useState('');
 
+  /**
+   * useEffect: Runs once on mount to fetch categories and products
+   */
   useEffect(() => {
     Promise.all([
       fetch('https://shop-stack.onrender.com/categories').then(res => res.json()),
@@ -52,7 +55,7 @@ function CategoryPage() {
   return (
     <div className="p-6">
       <h1 className="text-2xl font-semibold mb-4">Browse Products by Category</h1>
-
+       {/*  Filter controls: dropdown and search input*/}
       <div className="flex space-x-4 items-center mb-6">
         <CategoryFilter options={categories} onSelect={handleSelect} />
 
@@ -66,7 +69,7 @@ function CategoryPage() {
 
         
       </div>
-
+ {/* Display error message or the filtered product list */}
       {error ? (
         <p className="text-red-500 font-medium">{error}</p>
       ) : (
