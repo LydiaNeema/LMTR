@@ -1,21 +1,24 @@
 import React, { useState } from "react";
 
-const API_URL = "https://shop-stack.onrender.com/products";
+const API_URL = "https://shop-stack.onrender.com/products";  //API_URL
 
 function EditForm({ product, setProducts }) {
+    // Controls whether the edit form/modal is visible
   const [showForm, setShowForm] = useState(false);
+   // Holds editable product values pre-filled from the original produ
   const [formData, setFormData] = useState({
     name: product.name,
     price: product.price,
     category: product.category,
     image: product.image,
   });
+//Updates form values in real-time as the user types
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
-
+  // Update the products list in parent component
   const handleUpdate = (e) => {
     e.preventDefault();
     fetch(`${API_URL}/${product.id}`, {
@@ -25,10 +28,11 @@ function EditForm({ product, setProducts }) {
     })
       .then((res) => res.json())
       .then((updated) => {
+          // Update the products list in parent component
         setProducts((prev) =>
           prev.map((p) => (p.id === updated.id ? updated : p))
         );
-        setShowForm(false);
+        setShowForm(false);   // Close the modal after saving
       })
       .catch((err) => console.error("Update failed:", err));
   };
