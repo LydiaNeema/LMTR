@@ -3,44 +3,45 @@ import ProductCard from "../components/ProductCard";
 import AddProductForm from "../components/AddProductForm";
 import ImageSlider from "../components/ImageSlider";
 
-const API_URL = "https://shop-stack.onrender.com/products";
+const API_URL = "https://shop-stack.onrender.com/products"; //API_URL for backend 
 
 function Home() {
-  const [products, setProducts] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [editingProductId, setEditingProductId] = useState(null);
-  const [searchTerm, setSearchTerm] = useState("");
+  const [products, setProducts] = useState([]);  //State to hold all products
+  const [loading, setLoading] = useState(true);   //Loading state while data is being fetched
+  const [editingProductId, setEditingProductId] = useState(null);    // Tracks which product is currently being edited (if any)
+  const [searchTerm, setSearchTerm] = useState("");  // Search term input by the user
 
-  
+  // Fetch products 
   useEffect(() => {
     fetch(API_URL)
       .then((res) => res.json())
       .then((data) => {
-        setProducts(data);
-        setLoading(false);
+        setProducts(data);  // Store fetched data in state
+        setLoading(false);   // Stop loading once data is loaded
       })
       .catch((err) => {
         console.error("Failed to fetch products:", err);
-        setLoading(false);
+        setLoading(false);  // Still stop loading on error
       });
   }, []);
-
+// Adds a new product to the list (used by the form)
   function handleAddProduct(newProduct) {
     setProducts((prev) => [...prev, newProduct]);
   }
 
-
+ // Deletes a product by ID
   function handleDeleteProduct(id) {
     fetch(`${API_URL}/${id}`, {
       method: "DELETE",
     })
       .then(() => {
+         // Remove the deleted product from the state
         setProducts((prev) => prev.filter((product) => product.id !== id));
       })
       .catch((err) => console.error("Error deleting product:", err));
   }
 
-
+ // Updates an existing product's info
   function handleUpdateProduct(updatedProduct) {
     fetch(`${API_URL}/${updatedProduct.id}`, {
       method: "PATCH",
@@ -51,6 +52,7 @@ function Home() {
     })
       .then((res) => res.json())
       .then((data) => {
+        // Replace the old product with the updated one in state
         setProducts((prev) =>
           prev.map((product) => (product.id === data.id ? data : product))
         );
@@ -59,11 +61,11 @@ function Home() {
       .catch((err) => console.error("Error updating product:", err));
   }
 
-
+ // Filter products based on the current search term
   const filteredProducts = products.filter((product) =>
     product.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
-
+ // Show loading state while fetching
   if (loading)
     return (
       <div className="flex justify-center items-center h-40">

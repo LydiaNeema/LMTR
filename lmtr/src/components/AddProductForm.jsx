@@ -1,7 +1,7 @@
 import { useState } from "react";
 
-const API_URL = "https://shop-stack.onrender.com/products";
-
+const API_URL = "https://shop-stack.onrender.com/products";  //API_URL
+ // This state manages the input values from the form
 function AddProductForm({ onAdd }) {
   const [formData, setFormData] = useState({
     name: "",
@@ -9,9 +9,9 @@ function AddProductForm({ onAdd }) {
     image: "",
     category: "",
   });
-
+ // This controls whether the modal is open or not
   const [showModal, setShowModal] = useState(false);
-
+  // Keeps form inputs in sync with state
   function handleChange(e) {
     const { name, value } = e.target;
     setFormData((prev) => ({
@@ -19,19 +19,20 @@ function AddProductForm({ onAdd }) {
       [name]: value,
     }));
   }
-
+ // Handles the actual submission of the new product
   function handleSubmit(e) {
     e.preventDefault();
+     // Simple check to avoid invalid pricing
     if (formData.price < 0) {
       alert("Price cannot be negative.");
       return;
     }
-
+// Format the product properly before sending
 const newProduct = {
   ...formData,
   price: parseFloat(formData.price),
 };
-
+ // POST the new product to the API
 fetch(API_URL, {
   method: "POST",
   headers: {
@@ -44,13 +45,13 @@ fetch(API_URL, {
     return res.json();
   })
   .then((data) => {
-    onAdd(data);
-    setFormData({ name: "", price: "", image: "", category: "" });
-    setShowModal(false);
+    onAdd(data);  // Notify parent component with the new product
+    setFormData({ name: "", price: "", image: "", category: "" });  // Reset form
+    setShowModal(false);  //Close the modal
   })
   .catch((err) => console.error("Error adding product:", err));
   }
-
+// Resets and closes the form if user cancels
   function handleCancel() {
     setShowModal(false);
     setFormData({ name: "", price: "", image: "", category: "" }); // optional reset
