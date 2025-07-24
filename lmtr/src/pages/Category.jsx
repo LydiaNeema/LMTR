@@ -75,4 +75,4 @@ function CategoryPage() {
     </div>
   );
 }
-export default CategoryPage
+export default CategoryPage;
